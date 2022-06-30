@@ -47,6 +47,7 @@ On arrive donc dans le  `Menu - Configuration LXC`:
 |    0 - retour                      |
 +------------------------------------+
 ```
+
 On y retrouve encore une fois plusieurs options disponiples : 
 * 1 - permet de **mettre à jour** le serveur.
 * 2 - permet d'**installer** le service Linux Containers.
@@ -59,6 +60,7 @@ On y retrouve encore une fois plusieurs options disponiples :
 On peut donc installer lxc avec le choix n°2, à savoir qu'il est conseillé de faire un **update** juste avant(option 1).
 
 ### Création du bridge virtuel.
+
 L'option 2 du menu pricipal nous amène au `Menu - Configuration réseau`.
 ```
 +------------------------------------+
@@ -71,7 +73,9 @@ L'option 2 du menu pricipal nous amène au `Menu - Configuration réseau`.
 |    0 - retour                      |
 +------------------------------------+
 ```
+
 Grace aux actions du menu ci-dessus, nous allons configurer le réseau des conteneurs. Ce réseau sera en mode « bridge » grâce au « pont » que nous allons créer.De cette façon :
+
 * les conteneurs disposent de leur propre **« sous-réseau »** en IPv4
 * les conteneurs peuvent **communiquer** entre eux dans ce réseau
 * l’hôte des conteneurs (machine hote) peut accéder aux conteneurs
@@ -86,7 +90,9 @@ Premierement, on :
 une fois ces fichiers modifiés, on **redémarre** le service **lxc-net** et on vérifie son « **état** »
 
 ### Gestion des conteneurs
+
 Venons-en aux plus important, les conteneurs avec le menu `Menu -  Gestion des conteneurs`.
+
 ```
 +------------------------------------+
 |    Menu - Gestion des conteneurs   |
@@ -105,8 +111,11 @@ Venons-en aux plus important, les conteneurs avec le menu `Menu -  Gestion des c
 |    0 - Retour                      |
 +------------------------------------+
 ```
+
 #### Création de conteneur
+
 L'option `1 - Créer conteneur`, nous permet de créer un conteneur, le logiciel nous demandera differente informations:
+
 ```
 > Veuillez saisir le nom :
 toto
@@ -116,8 +125,10 @@ debian
 stretch
 > Veuillez saisir l'architecture :
 amd64
+
 ```
 Vous pouvez trouvé toutes ces information avec l'option `11 - Liste des images`
+
 Il est également possible de:
 * détruire un conteneur
 * lister les conteneurs
@@ -127,7 +138,9 @@ Il est également possible de:
 * entrer dans un conteneur via ssh
 
 #### Dans le conteneur
+
 Quand on entre dans un coneteneur on arrive sur le `Menu - Dans le conteneur`
+
 ```
 +------------------------------------+
 |    Menu - Dans le conteneur        |
@@ -160,11 +173,11 @@ Ce qui nous améne au `Menu - Gestion des IPs`.
 |    0 - retour                                |
 +----------------------------------------------+
  ```
- Ici, on peut soit modifier l'intervalle des IPs dynamique ou Changer l'ip d'un conteneur.
+Ici, on peut soit modifier l'intervalle des IPs dynamique ou Changer l'ip d'un conteneur.
  
- #### Sauvegarde
- Il est important de pouvoir Sauvegarder un conteneur pour avoir un Back-Up en cas de problémes.
-  ```
+#### Sauvegarde
+Il est important de pouvoir Sauvegarder un conteneur pour avoir un Back-Up en cas de problémes.
+```
 +------------------------------------+
 |    Menu - Gestion des sauvegarde   |
 |                                    |
@@ -174,7 +187,7 @@ Ce qui nous améne au `Menu - Gestion des IPs`.
 |    4 - Afficher les sauvegardes    |
 |    0 - retour                      |
 +------------------------------------+
-       ```
+ ```
        
 #### Snapshot
  Il est également possible de faire des snapshot d'un conteneur est de les gérée.
