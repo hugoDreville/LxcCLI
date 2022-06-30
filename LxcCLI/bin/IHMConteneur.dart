@@ -186,7 +186,7 @@ class IHMConteneur {
   static void listImage() {
     print("+-----------------------------------------+");
     print(Color.vert("|   Voici toutes les images disponible:   |"));
-    print("|-----------------------------------------|");
+    print("|   Distribution  |   release   |  arch   |");
     print("| almalinux       | 8           | amd64   |");
     print("| almalinux       | 8           | ppc64el |");
     print("| almalinux       | 9           | amd64   |");
