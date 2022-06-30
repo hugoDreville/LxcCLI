@@ -114,7 +114,7 @@ Venons-en aux plus important, les conteneurs avec le menu `Menu -  Gestion des c
 
 #### Création de conteneur
 
-L'option `1 - Créer conteneur`, nous permet de créer un conteneur, le logiciel nous demandera differente informations:
+L'option `1 - Créer conteneur`, nous permet de** créer un conteneur**, le logiciel nous demandera differente informations:
 
 ```
 > Veuillez saisir le nom :
@@ -130,12 +130,12 @@ amd64
 Vous pouvez trouvé toutes ces information avec l'option `11 - Liste des images`
 
 Il est également possible de:
-* détruire un conteneur
-* lister les conteneurs
-* lancer un conteneur
-* stopper un conteneur
-* entrer dans un conteneur
-* entrer dans un conteneur via ssh
+* **détruire** un conteneur
+* **lister** les conteneurs
+* **lancer** un conteneur
+* **stopper** un conteneur
+* **entrer** dans un conteneur
+* **entrer** dans un conteneur via **ssh**
 
 #### Dans le conteneur
 
@@ -156,13 +156,13 @@ Quand on entre dans un coneteneur on arrive sur le `Menu - Dans le conteneur`
 +------------------------------------+
 ```
 Plusieurs possibilités s'offre a nous: 
-* Commande manuelle
-* Configuration de ssh
-* Ping
-* Installer un service
+* **Commande** manuelle
+* Configuration de **ssh**
+* **Ping**
+* Installer un **service**
 
 #### Gestion des IPs
-il est egalement possible de gerer les IPs avec `8 - Gestion des IPs`.
+il est egalement possible de **gerer les IPs** avec `8 - Gestion des IPs`.
 Ce qui nous améne au `Menu - Gestion des IPs`.
 ```
 +----------------------------------------------+
@@ -173,10 +173,10 @@ Ce qui nous améne au `Menu - Gestion des IPs`.
 |    0 - retour                                |
 +----------------------------------------------+
  ```
-Ici, on peut soit modifier l'intervalle des IPs dynamique ou Changer l'ip d'un conteneur.
+Ici, on peut soit modifier l'**intervalle des IPs dynamique** ou Changer l'**ip** d'un conteneur.
  
 #### Sauvegarde
-Il est important de pouvoir Sauvegarder un conteneur pour avoir un Back-Up en cas de problémes.
+Il est important de pouvoir **Sauvegarder** un conteneur pour avoir un **Back-Up** en cas de problémes.
 ```
 +------------------------------------+
 |    Menu - Gestion des sauvegarde   |
@@ -190,7 +190,7 @@ Il est important de pouvoir Sauvegarder un conteneur pour avoir un Back-Up en ca
  ```
        
 #### Snapshot
- Il est également possible de faire des snapshot d'un conteneur est de les gérée.
+ Il est également possible de faire des **snapshots** d'un conteneur est de les gérée.
   ```
 +------------------------------------+
 |    Menu - Gestion des snapshots    |
@@ -204,7 +204,7 @@ Il est important de pouvoir Sauvegarder un conteneur pour avoir un Back-Up en ca
 ```
 
 ### Firewall
-Pour finir, le Firewall, c'est quelque chose à ne pas n'egliger, il est la pour assuer le trafic entre nos conteneurs et l'exterieur.
+Pour finir, le **Firewall**, c'est quelque chose à ne pas n'egliger, il est la pour **assuer le trafic** entre nos conteneurs et l'exterieur.
 Voici le menu associer a ce dernier:
 ```
 +------------------------------------------+");
@@ -220,23 +220,23 @@ Voici le menu associer a ce dernier:
 +------------------------------------------+");
  ```
  Pour commancer, il faut:
- * Activer le routage 
- * Installer iptables-persistent
- * initialiser le fichier rules.v4 
- * Redémarrer le service  
+ * Activer le **routage** 
+ * Installer **iptables-persistent**
+ * initialiser le fichier **rules.v4** 
+ * **Redémarrer** le service  
  
  
- Une fois fait, vous pouvez ajouter les règles iptables que vous souhaiter via l'option `4 - ajouter une règle iptables`.
- A noter que l'option `3 - initialiser le fichier rules.v4` sert de Back-Up si jamais vous avez besoin de reset le fichier iptables.
+ Une fois fait, vous pouvez ajouter les **règles iptables** que vous souhaiter via l'option `4 - ajouter une règle iptables`.
+ A noter que l'option `3 - initialiser le fichier rules.v4` sert de **Back-Up** si jamais vous avez besoin de **reset** le fichier iptables.
  
  ## Programme
 Voici le diagramme de classe réalisé pour le programme:
 
-![DevOps](https://user-images.githubusercontent.com/100281360/169568807-7614db2f-5ccc-48c5-a29d-01559e10fede.PNG)
+![image](https://user-images.githubusercontent.com/100281360/176796407-efa5f139-fc72-46cf-9b79-ea2bef93f0ad.png)
 
 Elle respecte le modèle **MVC**(modèle, vue, controleur)
 on a plusieurs types de classes:
-* Les intéractions homme/machine (IHMFtp, IHMUser).
+* Les intéractions homme/machine (IHM).
 * Le contrôleur(main).
-* Les modèles (Ftp, User).
+* Les modèles (config).
   
